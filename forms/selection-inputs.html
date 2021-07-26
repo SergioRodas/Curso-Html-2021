@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inputs de selección</title>
+  </head>
+  <!-- 
+    radio -> Permite seleccionar una única opción de una lista de opciones relacionadas.
+    
+    checkbox -> Permite seleccionar varias opciones de una lista de opciones relacionadas.
+
+    select -> Crea una lista de opciones donde podemos seleecionar una o varias opciones
+
+    Cada opción irá dentro de una etiqueta <option> </option>
+
+    Si tenemos muchas opciones podemos ordenarlas por categorías a través de la etiqueta <outgroup> con el atributo label para nombrar la categoría.
+ -->
+  <body>
+    <h1>Elementos seleccionables</h1>
+    <form>
+      <h2>Género</h2>
+      <div>
+        <label
+          >Masculino
+          <input type="radio" value="masculino" name="gender" checked />
+        </label>
+      </div>
+      <div>
+        <label
+          >Femenino
+          <input type="radio" value="femenino" name="gender" />
+        </label>
+      </div>
+      <div>
+        <label
+          >Otro
+          <input type="radio" value="Otro" name="gender" />
+        </label>
+      </div>
+
+      <h2>Lenguajes que conoces</h2>
+      <div>
+        <label>
+          HTML
+          <input type="checkbox" name="languages" value="html" />
+        </label>
+      </div>
+      <div>
+        <label>
+          CSS
+          <input type="checkbox" name="languages" value="css" />
+        </label>
+      </div>
+      <div>
+        <label>
+          JavaScript
+          <input type="checkbox" name="languages" value="javascript" />
+        </label>
+      </div>
+    </form>
+
+    <form>
+      <select name="languages">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+      <select name="languages2" multiple>
+        <!-- Si apreto ctrl puedo seleccionar multiples opciones -->
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="javascript">JavaScript</option>
+      </select>
+    </form>
+
+    <form>
+      <select name="mascotas">
+        <output label="4 patas">
+          <option value="perro">Perro</option>
+          <option value="gato">Gato</option>
+          <option value="hamster">Hamster</option>
+          <option value="conejo">Conejo</option>
+        </output>
+        <output label="aves">
+          <option value="loro">loro</option>
+          <option value="canario">Canario</option>
+        </output>
+        <output label="otras">
+          <option value="serpiente">Serpiente</option>
+          <option value="tarantula">Tarántula</option>
+        </output>
+      </select>
+    </form>
+
+    <form>
+      <input type="list" list="pets">
+      <datalist id="pets">
+        <option value="dog">Perro</option>
+        <option value="cat">Gato</option>
+        <option value="hamster">Hamster</option>
+        <option value="rabbit">Conejo</option>
+        <option value="parrot">loro</option>
+        <option value="canary">Canario</option>
+        <option value="snake">Serpiente</option>
+        <option value="tarantula">Tarántula</option>
+      </datalist>
+    </form>
+  </body>
+</html>

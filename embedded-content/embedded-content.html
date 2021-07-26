@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contenido embebido</title>
+    <style>
+        video, img
+        {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<!-- 
+    DPR (Device Pixel Ratio)
+        Es la relación que existe entre los píxeles reales que tiene el dispositivo y los píxeles que tenemos disponibles para pintar contenido
+
+    DPR = píxeles reales / píxeles disponibles
+ -->
+<body>
+    <h1>Contenido embebido</h1>
+    <!-- <img srcset="
+    /embedded-content/assets/images/portada.webp,
+    /embedded-content/assets/images/portada.jpg,
+    /embedded-content/assets/images/portada-mobile.webp 2x,
+    /embedded-content/assets/images/portada-mobile.jpg 2x"
+    src="/embedded-content/assets/images/portada.jpg" alt="Imagen de portada"> -->
+    <picture>
+        <!-- <source srcset="/embedded-content/assets/images/portada.webp,
+        /embedded-content/assets/images/portada.jpg"> -->
+        <!-- <source srcset="/embedded-content/assets/images/portada-mobile.webp,
+        /embedded-content/assets/images/portada-mobile.jpg" media="(max-width:1200px)">
+        <img src="/embedded-content/assets/images/portada.jpg" alt="Imagen de portada"> -->
+    </picture>
+    <!-- <audio src="/embedded-content/assets/audio/oomiee.mp3" controls autoplay muted></audio> -->
+    <!-- <video src="/embedded-content/assets/video/Creux De Van.mp4" controls loop poster="/embedded-content/assets/images/portada.jpg"></video> -->
+    <h2>Gatos</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, pariatur modi quas, perspiciatis quasi excepturi mollitia, facilis sequi labore itaque iusto corrupti impedit laboriosam aperiam! Eos deserunt non quidem facilis.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, pariatur modi quas, perspiciatis quasi excepturi mollitia, facilis sequi labore itaque iusto corrupti impedit laboriosam aperiam! Eos deserunt non quidem facilis.</p>
+    <figure>
+        <img src="https://images.pexels.com/photos/2558605/pexels-photo-2558605.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="gato tumbado">
+        <figcaption>Gato tumbado</figcaption>
+    </figure>
+</body>
+</html>
